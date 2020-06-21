@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto GifOS</title>
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/dark.css">    
+</head>
+<body id="body" class="body">
+    <header class= "top" id="top"> ¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// 
+       Número de visitas:10.200.003
+    </header>
+    <nav id="navbar">
+      
+        <img class="logo" id="logo" src="images/gifOF_logo.png" alt="Logo">
+        <ul>
+            <li><a href="creategifos.html"><button class="button header" id="create">Crear Guifos</button></a></li>
+            <li><button class="button header" id="theme-button">Elegir Tema <img id="drop" src="images/dropdown.svg" alt="Drop">
+                <ul id="themes" class="themes" > 
+                    <li><div class="sailor" id="btn-day">Sailor Day</div></li>
+                    <li><div class="sailor" id= "btn-night">Sailor Night</div></li>
+                </ul>
+            </button></li>             
+            <li><a id="misGifos" class="header misgifos">Mis Gifos</a></li>
+        </ul> 
+        </nav>
+    </header>
+    <section class="searching" id="searching">
+        <div class="top" id="lookup">Buscar</div>
+        <div class="search" id="search"> 
+            <input type="text" id="q" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…">
+            <button id="search__button" class="search--button--light"><img id="glass" src="images/lupa_inactive.svg" alt="Lupa"> Buscar </button>
+        </div>
+        <div class = "hidden" id ="suggestSearch">
+            <button class="suggestSearch__option" id ="suggestSearch__option1"></button>
+            <button class="suggestSearch__option" id ="suggestSearch__option2"></button>
+            <button class="suggestSearch__option" id ="suggestSearch__option3"></button>
+        </div>
+    </section>
+    
+    <section id="search_result" class="hidden">
+        <h4 class="titles" id="result_title"> </h4>
+        <div id="space_result" class="space_result"></div>                   
+    </section>
+
+    <section id="suggestions" class="sections">
+        <h4 class="titles" id="today">Hoy te sugerimos: </h4>
+        <div id="space_suggestions" class="space_result"></div>
+    </section> 
+    <section id="trend" class="sections">
+        <h4 class="titles" id="trending">Tendencias: </h4>
+        <div id="space_trend" class="space_result"></div>
+    </section>
+
+    <script src="js/mainScript.js"></script>   
+</body>
+</html>
